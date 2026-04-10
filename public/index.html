@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="mode-selector">
+      <button class="mode-btn active" id="mode-pvp">vs Player</button>
+      <button class="mode-btn" id="mode-cpu">vs CPU</button>
+    </div>
+
+    <div class="scoreboard">
+      <div class="score-item" id="score-x">
+        <span class="score-label x-label">X</span>
+        <span class="score-value" id="x-wins">0</span>
+      </div>
+      <div class="score-item" id="score-draw">
+        <span class="score-label draw-label">Draws</span>
+        <span class="score-value" id="draws">0</span>
+      </div>
+      <div class="score-item" id="score-o">
+        <span class="score-label o-label">O</span>
+        <span class="score-value" id="o-wins">0</span>
+      </div>
+    </div>
+
+    <div class="status" id="status">Player X's turn</div>
+
+    <div class="board" id="board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </div>
+
+    <div class="actions">
+      <button class="btn-reset" id="reset">New Game</button>
+      <button class="btn-reset btn-secondary" id="reset-scores">Reset Scores</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
